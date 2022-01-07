@@ -12,15 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acinquini/FirstMern.git"
+    "url": "https://github.com/acinquini/Mern2.git"
   },
   "author": "acinquini",
   "license": "ISC",
-  "bugs": {
-    "type": "git",
-    "url": "https://github.com/acinquini/FirstMern/issues"
-  },
-  "homepage": "https://github.com/acinquini/FirstMern#readme",
   "devDependencies": {
     "concurrently": "^6.5.1",
     "cross-env": "^7.0.3",
