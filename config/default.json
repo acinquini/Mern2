@@ -1,0 +1,6 @@
+{ 
+    "_comment": "Connect string is taken from MongoDB cluster myFirstDatabase",
+    "mongoDB_URI": "mongodb+srv://acinquini:Ale129801'@cluster0.idufa.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secrettoken"
+}
+
