@@ -1,7 +1,7 @@
-require('dotenv').config();
-
 const express = require('express');
 const connectDB = require('./config/db');
+
+const envs = require('./config/config');
 
 // Connect to MongoDB
 connectDB();
@@ -14,11 +14,14 @@ app.use(express.json({ extended: false }));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 
-const { PORT, HOST, NODE_ENV } = process.env;
+const PORT = envs.PORT || process.env.PORT;
+const HOST = envs.HOST || process.env.HOST;
+const NODE_ENV = envs.NODE_ENV || process.env.NODE_ENV;
+
+console.log(`Host: ${HOST} port: ${PORT} node_env: ${NODE_ENV}`);
 
 // production
 if (NODE_ENV === 'production') {
-    console.log("NODE_ENV = production")
     app.use(express.static('client/build'));
   
     app.get('*', (req, res) => {
