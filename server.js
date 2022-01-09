@@ -21,7 +21,7 @@ const NODE_ENV = envs.NODE_ENV || process.env.NODE_ENV;
 
 console.log(`Host: ${HOST} port: ${PORT} node_env: ${NODE_ENV}`);
 
-// production
+// production - Heroku - (client is converted in static resources for the unique application)
 if (NODE_ENV === 'production') {
     app.use(express.static('client/build'));
   

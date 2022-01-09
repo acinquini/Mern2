@@ -1,6 +1,6 @@
 {
   "name": "firstmern",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "practicing with MERN",
   "main": "server.js",
   "scripts": {
