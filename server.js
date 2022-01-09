@@ -14,6 +14,7 @@ app.use(express.json({ extended: false }));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 
+// To handle local development together with deploy in heroku (production)
 const PORT = envs.PORT || process.env.PORT;
 const HOST = envs.HOST || process.env.HOST;
 const NODE_ENV = envs.NODE_ENV || process.env.NODE_ENV;
